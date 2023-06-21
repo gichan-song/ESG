@@ -1,11 +1,32 @@
 import React from 'react';
 
+class NavBar extends React.Component {
+  render() {
+    return (
+      <nav>
+        <ul>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/location">Location</a>
+          </li>
+          <li>
+            <a href="/vision">Vision</a>
+          </li>
+        </ul>
+      </nav>
+    );
+  }
+}
+
 class CompanyWebsite extends React.Component {
   render() {
     return (
       <div>
         <header>
           <h1>Welcome to XYZ Distribution Company</h1>
+          <NavBar />
         </header>
         <main>
           <section>
@@ -19,26 +40,22 @@ class CompanyWebsite extends React.Component {
             </p>
           </section>
           <section>
-            <h2>Our Services</h2>
-            <ul>
-              <li>Product sourcing and procurement</li>
-              <li>Inventory management</li>
-              <li>Warehousing and storage</li>
-              <li>Order fulfillment and shipping</li>
-              <li>Supply chain optimization</li>
-            </ul>
+            <h2>Location</h2>
+            <p>
+              Our company is located in a strategic location that allows us to
+              reach our customers quickly and efficiently. We have warehouses
+              and distribution centers in major cities to ensure prompt delivery
+              of products.
+            </p>
           </section>
           <section>
-            <h2>Contact Us</h2>
+            <h2>Vision</h2>
             <p>
-              We'd love to hear from you! Feel free to reach out to us via the
-              following methods:
+              Our vision is to be the preferred distribution partner for
+              businesses around the world. We aim to provide exceptional
+              services, build long-term relationships, and contribute to the
+              growth and success of our clients.
             </p>
-            <ul>
-              <li>Email: info@xyzdistribution.com</li>
-              <li>Phone: +1-123-456-7890</li>
-              <li>Address: 123 Main Street, City, State, ZIP</li>
-            </ul>
           </section>
         </main>
         <footer>
